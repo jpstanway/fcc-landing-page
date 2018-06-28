@@ -1,6 +1,14 @@
 body {
     margin: 0;
     background: url('http://res.cloudinary.com/mtninja/image/upload/v1530072218/what-the-hex_zeyxrz.png');
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -8,6 +16,15 @@ h1 {
     text-align: center;
     display: block;
     width: 100%;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.4em;
 }
 
 hr.style-two {
@@ -43,12 +60,6 @@ hr.style-two {
 
 #nav-bar li, #footer li {
     display: inline;
-    margin-right: 30px;
-}
-
-#nav-bar a, #footer a {
-    color: #fff;
-    text-decoration: none;
 }
 
 #main {
@@ -86,13 +97,16 @@ hr.style-two {
     width: 100%;
     height: 50px;
     margin-bottom: 20px;
+    font-family: inherit;
+}
+
+#form input {
+    padding-left: 5px;
+    margin-top: 5px;
 }
 
 #submit {
-    color: #fff;
-    background: #6609ce;
-    border: none;
-    cursor: pointer;
+    font-size: 1.2em;
 }
 
 #info {
@@ -140,8 +154,28 @@ hr.style-two {
 .pricing-box button {
     width: 80%;
     height: 35px;
+}
+
+.btn-style {
     border: none;
     cursor: pointer;
     color: #fff;
     background-color: #6609ce;
+}
+
+.btn-style:hover {
+    opacity: 0.85;
+}
+
+.menu-style a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.menu-style a:hover {
+    background-color: #0971CE;
 }

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FCC Landing Page</title>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,400i" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -12,7 +13,7 @@
             <img id="header-img" 
             src="http://res.cloudinary.com/mtninja/image/upload/c_scale,w_150/v1529881436/DJI_Innovations_logo.svg_qyu0ri.png">
             <nav id="nav-bar">
-                <ul>
+                <ul class="menu-style">
                     <li class="nav-link"><a href="#features">Features</a></li>
                     <li class="nav-link"><a href="#info">Info</a></li>
                     <li class="nav-link"><a href="#cost">Cost</a></li>
@@ -53,7 +54,7 @@
                                 <input type="email" id="email" name="email" placeholder="Email address" required>
                             </label>
                             <br>
-                            <button type="submit" id="submit">Send Me Updates</button> 
+                            <button type="submit" id="submit" class="btn-style">Send Me Updates</button> 
                         </form>
                     </div>
                 </article>
@@ -86,28 +87,28 @@
             <section id="cost">
                 <div class="pricing-box">
                     <img src="http://res.cloudinary.com/mtninja/image/upload/v1530073315/mavic_black_hqszv9.jpg">
-                    <h2>Onyx Black</h2>
+                    <h3>Onyx Black</h3>
                     <p>Lorem ipsum dolor sit amet</p>
-                    <a href="#features"><button>Get Notified</button></a>
+                    <a href="#"><button class="btn-style">Get Notified</button></a>
                 </div>
                 <div class="pricing-box">
                     <img src="http://res.cloudinary.com/mtninja/image/upload/v1530073326/mavic_white_molmlm.jpg">
-                    <h2>Arctic White</h2>
+                    <h3>Arctic White</h3>
                     <p>Lorem ipsum dolor sit amet</p>
-                    <a href="#features"><button>Get Notified</button></a>
+                    <a href="#"><button class="btn-style">Get Notified</button></a>
                 </div>
                 <div class="pricing-box">
                     <img src="http://res.cloudinary.com/mtninja/image/upload/v1530073321/mavic_red_m2hr3r.jpg">
-                    <h2>Lava Red</h2>
+                    <h3>Lava Red</h3>
                     <p>Lorem ipsum dolor sit amet</p>
-                    <a href="#features"><button>Get Notified</button></a>
+                    <a href="#"><button class="btn-style">Get Notified</button></a>
                 </div>
             </section>
         </main>
         <footer id="footer">
-            <ul>
+            <ul class="menu-style">
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Conditions</a></li>
+                <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <p id="trademark">&copy; 2018 Jordan Stanway. All rights reserved.</p>
