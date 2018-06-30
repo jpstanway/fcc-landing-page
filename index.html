@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FCC Landing Page</title>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,400i" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
@@ -16,9 +17,9 @@
             </a>
             <nav id="nav-bar">
                 <ul class="menu-style">
-                    <li class="nav-link"><a href="#features">Features</a></li>
-                    <li class="nav-link"><a href="#info">Info</a></li>
-                    <li class="nav-link"><a href="#cost">Models</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#info" class="nav-link">Info</a></li>
+                    <li><a href="#cost" class="nav-link">Models</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,9 +39,9 @@
                         </div>
                         <div id="benefits">
                             <ul>
-                                <li>fly care-free with near-perfect obstacle avoidance</li>
-                                <li>stay in the air for longer so you can get that perfect shot</li>
-                                <li>fold it up and fit it in your backpack, camera bag, or even your cargo pants</li>
+                                <li><i class="fas fa-arrow-circle-right"></i> fly care-free with near-perfect obstacle avoidance</li>
+                                <li><i class="fas fa-arrow-circle-right"></i> stay in the air for longer so you can get that perfect shot</li>
+                                <li><i class="fas fa-arrow-circle-right"></i> fold it up and fit it in your backpack, camera bag, or even your cargo pants</li>
                             </ul>
                         </div>
                     </article>
@@ -58,7 +59,7 @@
                                     <input type="email" id="email" name="email" placeholder="Email address" required>
                                 </label>
                                 <br>
-                                <button type="submit" id="submit" class="btn-style">Send Me Updates</button> 
+                                <input type="submit" id="submit" class="btn-style" value="Send Me Updates">
                             </form>
                         </div>
                     </article>
