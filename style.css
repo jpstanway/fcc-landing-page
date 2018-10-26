@@ -17,11 +17,6 @@ h1, h2, h3 {
 }
 
 h1 {
-    margin-top: 72px;
-    margin-bottom: 0;
-    text-align: center;
-    display: block;
-    width: 100%;
     font-size: 2.5em;
     color: #fff;
 }
@@ -61,6 +56,7 @@ hr.style-four {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 #header-img {
@@ -94,6 +90,28 @@ hr.style-four {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
 }
 
+#intro {
+    position: relative;
+    padding-top: 65px;
+}
+
+#intro-text {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-size: 2.6em;
+}
+
+#intro-text h1, #intro-text h2 {
+    margin: 0;
+}
+
+#intro-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
 /*
 *   VIDEO/LEAD CAPTURE
 */
@@ -105,9 +123,7 @@ hr.style-four {
 }
 
 #subheading {
-    margin-top: 0;
     font-style: italic;
-    text-align: center;
     color: #fff;
 }
 
@@ -294,9 +310,21 @@ hr.style-four {
 *   RESPONSIVE STYLES
 */
 
+@media screen and (max-width: 1408px) {
+    #intro-text {
+        font-size: 1.4em;
+        top: 100px;
+    }
+}
+
 @media screen and (max-width: 1074px) {
     #nav-bar {
         width: auto;
+    }
+
+    #intro-text {
+        font-size: 1em;
+        top: 80px;
     }
 }
 
@@ -312,6 +340,12 @@ hr.style-four {
 }
 
 @media screen and (max-width: 450px) {
+
+    #intro-text {
+        top: 120px;
+        left: 0;
+        text-align: center;
+    }
 
     #features,
     #info,
