@@ -5,7 +5,8 @@
 
 body {
     margin: 0;
-    background: url('http://res.cloudinary.com/mtninja/image/upload/v1530072218/what-the-hex_zeyxrz.png');
+    /*background: url('http://res.cloudinary.com/mtninja/image/upload/v1530072218/what-the-hex_zeyxrz.png');*/
+    background-color: #eee;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
@@ -91,25 +92,28 @@ hr.style-four {
 }
 
 #intro {
-    position: relative;
+    width: 100vw;
+    height: 53vh;
     padding-top: 65px;
+    background: url('https://res.cloudinary.com/mtninja/image/upload/v1540508227/DJIMavicAir_ch0wu6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #intro-text {
-    position: absolute;
-    top: 120px;
-    left: 50px;
-    font-size: 2.6em;
+    width: 60vw;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 20vw;
+    background-color: rgba(0, 0 ,0, 0.7);
+    border-radius: 4px;
 }
 
 #intro-text h1, #intro-text h2 {
     margin: 0;
-}
-
-#intro-img {
-    width: 100%;
-    display: block;
-    height: auto;
 }
 
 /*
@@ -119,7 +123,7 @@ hr.style-four {
 #main-preview {
     padding: 20px 0px 20px 20px;
     background-color: #151515;
-    /*background: url('http://res.cloudinary.com/mtninja/image/upload/e_brightness_hsb/v1530070905/what-the-hex-dark_victcd.png');*/
+    background: url('http://res.cloudinary.com/mtninja/image/upload/e_brightness_hsb/v1530070905/what-the-hex-dark_victcd.png');
 }
 
 #subheading {
@@ -310,25 +314,28 @@ hr.style-four {
 *   RESPONSIVE STYLES
 */
 
-@media screen and (max-width: 1408px) {
-    #intro-text {
-        font-size: 1.4em;
-        top: 100px;
-    }
-}
-
 @media screen and (max-width: 1074px) {
     #nav-bar {
         width: auto;
     }
 
     #intro-text {
-        font-size: 1em;
-        top: 80px;
+        top: 30%;
+        left: 17%;
     }
 }
 
 @media screen and (max-width: 769px) {
+
+    #intro {
+        height: 26vh;
+    }
+
+    #intro-text {
+        width: 80vw;
+        top: 25%;
+        left: 7%;
+    }
 
     .pricing-box {
         margin: 1.5%;
@@ -341,10 +348,13 @@ hr.style-four {
 
 @media screen and (max-width: 450px) {
 
+    h1 {
+        font-size: 2em;
+    }
+
     #intro-text {
-        top: 120px;
-        left: 0;
-        text-align: center;
+        width: 80vw;
+        left: 7%;
     }
 
     #features,
@@ -374,6 +384,10 @@ hr.style-four {
 
     #header {
         padding: 3%;
+    }
+
+    #nav-bar {
+        padding-right: 5%;
     }
 
     #nav-bar a {
