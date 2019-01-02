@@ -110,12 +110,12 @@ hr.style-four {
 }
 
 #intro-text {
-  width: 60vw;
+  width: 80%;
   padding: 10px;
   text-align: center;
   position: relative;
   top: 50%;
-  left: 20vw;
+  left: 8%;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 4px;
 }
@@ -330,7 +330,6 @@ hr.style-four {
 
   #intro-text {
     top: 30%;
-    left: 17%;
   }
 }
 
@@ -340,9 +339,7 @@ hr.style-four {
   }
 
   #intro-text {
-    width: 80vw;
     top: 25%;
-    left: 7%;
   }
 
   .pricing-box {
@@ -357,11 +354,6 @@ hr.style-four {
 @media screen and (max-width: 450px) {
   h1 {
     font-size: 2em;
-  }
-
-  #intro-text {
-    width: 80vw;
-    left: 7%;
   }
 
   #features,
